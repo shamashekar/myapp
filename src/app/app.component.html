@@ -1,0 +1,12 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{someProperty}}!
+  </h1>
+<div *ngIf="title; else otherTmpl">Hi Gary</div>
+
+<!--<ng-template #otherTmpl>Please login to continue.</ng-template>-->
+<ng-template #otherTmpl>Hi Gary, <button (click)="myEvent($event)">Logout now</button>.</ng-template>
+<button [disabled]="buttonStatus" >My Button</button>
+
+
